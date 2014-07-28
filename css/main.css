@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+html,body,section{
+	margin: 0px;
+	height: 100%;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/image/tnt1.png);
+	-webkit-background-size:cover; 
+	-moz-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.joinus{
+	height: 35%;
+	margin-right: 10%;
+	margin-top:2%;
+	text-align: right;
+}
+
+.joinus p{
+	font-size: 2.0em;
+	color:#EF5226;
+	font-family: 'Kaushan Script', cursive;
+}
+
+ol, ul { list-style: none; }
+
+.box-menu{
+	position: relative;
+	/*border: solid 2px blue;*/
+}
+
+.menu{
+	position: relative;
+	/*border: solid 2px green;*/
+	text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    /*border: solid 2px red;*/
+}
+
+li>div{
+	display: inline-block;
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+	margin-left: 15px;
+	margin-top: 5px;
+	margin-right: 15px;
+	text-align: center;
+}
+
+.btn p{
+	position: relative;
+	margin-top: 45px;
+	font-size: 20px;
+	font-family: 'Quattrocento', serif;
+}
+
+.btn a{
+	color: white;
+	text-decoration: none ;
+}
+
+.tw.tw.tw.tw.tw.tw{
+	font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
+}
+
+#e-btn{
+	background: radial-gradient(circle, rgba(156,68,155,0.9) 40%, transparent 100%);
+}
+
+#i-btn{
+	background: radial-gradient(circle, rgba(218,13,20,0.9) 40%, transparent 100%);
+}
+
+#t-btn{
+	background: radial-gradient(circle, rgba(255,255,41,0.9) 40%, transparent 100%);
+}
+
+#h-btn{
+	background: radial-gradient(circle, rgba(78,47,27,0.9) 40%, transparent 100%);
+}
+
+#m-btn{
+	background:radial-gradient(circle, rgba(19,18,15,0.9) 50%, transparent 100%);
+}
