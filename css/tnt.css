@@ -1,0 +1,215 @@
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: #3d3536;
+}
+
+a {
+    color: #EF8456;
+    text-decoration: none;
+}
+
+.article-container {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.article-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tnt-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.tnt-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tnt-header #tnt-logo {
+    float: left;
+    margin: 11px 0 0 5%;
+}
+
+#tnt-logo p{
+	font-size: 28px;
+    color:#ff6d24; 
+}
+
+@media only screen and (min-width: 768px) {
+    .tnt-header {
+        height: 70px;
+    }
+
+    .tnt-header #tnt-logo {
+        margin: 17px 0 0 5%;
+    }
+
+    #tnt-logo p{
+	font-size: 36px; 
+}
+}
+
+.tnt-nav {
+  float: right;
+  margin-right: 5%;
+  width: 44px;
+  height: 100%;
+  background: url("../assets/image/icon-menu.svg") no-repeat center center;
+  background-size: 44px 44px;
+  cursor: pointer;
+}
+.tnt-nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.tnt-nav ul.is-visible {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.tnt-nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  background: #2f292a;
+  border-top: 1px solid #453c3d;
+  color: #9e8564;
+}
+@media only screen and (min-width: 768px) {
+  .tnt-nav {
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: auto;
+  }
+  .tnt-nav ul {
+    position: static;
+    width: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 70px;
+  }
+  .tnt-nav ul.is-visible {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .tnt-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  .tnt-nav a {
+  	position: relative;
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    background: transparent;
+    padding: .6em 1em;
+    border-top: none;
+    color: #3d3536;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    font-size: 1rem;
+  }
+
+  nav a:hover,
+  nav a:focus {
+	outline: none;
+}
+
+  .tnt-nav a::before,
+  .tnt-nav a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #566473;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+   .tnt-nav a::after {
+	opacity: 0;
+	-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+  .tnt-nav a:hover::before,
+  .tnt-nav a:hover::after,
+  .tnt-nav a:focus::before,
+  .tnt-nav a:focus::after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+  .tnt-nav a:hover::after,
+  .tnt-nav a:focus::after {
+	top: 0%;
+	opacity: 1;
+}
+
+.tnt-nav a:hover {
+    color: #9e7c51;
+  }
+
+}
+
+
+.tnt-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}

@@ -11,27 +11,27 @@ $(document).ready(function(){
 			switch($this.attr("class")){
 
 				case "btn e-btn":
-				    _src = "url(assets/image/enews01.png)";
+				    _src = "url(assets/image/index/enews.png)";
 				    $this.css("opacity","1");
 				break;
 
 				case "btn i-btn":
-				    _src = "url(assets/image/cute01.png)";
+				    _src = "url(assets/image/index/iti.png)";
 				    $this.css("opacity","1");
 				break;				
 
 				case "btn t-btn":
-				    _src = "url(assets/image/tnt1.png)";
+				    _src = "url(assets/image/index/tnt.png)";
 				    $this.css("opacity","1");
 				break;
 
 				case "btn h-btn":
-				    _src = "url(assets/image/harriod01.png)";
+				    _src = "url(assets/image/index/harriod.png)";
 				    $this.css("opacity","1");
 				break;
 
 				case "btn m-btn":
-				    _src = "url(assets/image/moluei.png)";
+				    _src = "url(assets/image/index/moluei.png)";
 				    $this.css("opacity","1");
 				break;
 
