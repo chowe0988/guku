@@ -21,7 +21,6 @@ body {
 }
 
 a {
-    color: #EF8456;
     text-decoration: none;
 }
 
@@ -74,16 +73,16 @@ a {
 
     #tnt-logo p{
 	font-size: 36px; 
-}
+    }
 }
 
 .tnt-nav {
   float: right;
   margin-right: 5%;
-  width: 44px;
+  width: 46px;
   height: 100%;
   background: url("../assets/image/icon-menu.svg") no-repeat center center;
-  background-size: 44px 44px;
+  background-size: 46px 46px;
   cursor: pointer;
 }
 .tnt-nav ul {
@@ -113,6 +112,8 @@ a {
   border-top: 1px solid #453c3d;
   color: #9e8564;
 }
+
+
 @media only screen and (min-width: 768px) {
   .tnt-nav {
     width: auto;
@@ -130,13 +131,7 @@ a {
     transform: translateY(0);
     line-height: 70px;
   }
-  .tnt-nav ul.is-visible {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
+
   .tnt-nav li {
     display: inline-block;
     margin-left: 1em;
@@ -149,63 +144,60 @@ a {
     background: transparent;
     padding: .6em 1em;
     border-top: none;
-    color: #3d3536;
+    color: #47403a;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     font-size: 1rem;
   }
 
-  nav a:hover,
-  nav a:focus {
-	outline: none;
-}
-
-  .tnt-nav a::before,
-  .tnt-nav a::after {
+ .tnt-nav a::before,
+ .tnt-nav a::after {
 	position: absolute;
-	top: 100%;
 	left: 0;
 	width: 100%;
-	height: 3px;
-	background: #566473;
+	height: 2px;
+	background: #47403a;
 	content: '';
-	-webkit-transition: -webkit-transform 0.3s;
-	-moz-transition: -moz-transform 0.3s;
-	transition: transform 0.3s;
-	-webkit-transform: scale(0.85);
-	-moz-transform: scale(0.85);
-	transform: scale(0.85);
-}
-
-   .tnt-nav a::after {
 	opacity: 0;
-	-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
-	transition: top 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
 }
 
-  .tnt-nav a:hover::before,
-  .tnt-nav a:hover::after,
-  .tnt-nav a:focus::before,
-  .tnt-nav a:focus::after {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	transform: scale(1);
+.tnt-nav a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
 }
 
-  .tnt-nav a:hover::after,
-  .tnt-nav a:focus::after {
-	top: 0%;
+.tnt-nav a::after {
+	bottom: -2px;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.tnt-nav a:hover,
+.tnt-nav a:focus {
+	color: #080604;
+}
+
+.tnt-nav a:hover::before,
+.tnt-nav a:focus::before,
+.tnt-nav a:hover::after,
+.tnt-nav a:focus::after {
 	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
 }
 
-.tnt-nav a:hover {
-    color: #9e7c51;
-  }
-
 }
-
 
 .tnt-main-content {
   /* you need to assign a min-height to the main content so that the children can inherit it*/
