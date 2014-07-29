@@ -85,6 +85,7 @@ a {
   background-size: 46px 46px;
   cursor: pointer;
 }
+
 .tnt-nav ul {
   position: absolute;
   top: 0;
@@ -136,6 +137,7 @@ a {
     display: inline-block;
     margin-left: 1em;
   }
+
   .tnt-nav a {
   	position: relative;
     display: inline-block;
@@ -200,8 +202,56 @@ a {
 }
 
 .tnt-main-content {
-  /* you need to assign a min-height to the main content so that the children can inherit it*/
   height: 100%;
   position: relative;
   z-index: 1;
 }
+
+.fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.fixed-bg h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.fixed-bg.bg-1 {
+  background-image:  url("../assets/image/tnt.png");
+}
+
+@media only screen and (min-width: 768px) {
+  .fixed-bg h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .fixed-bg {
+    background-attachment: fixed;
+  }
+  .fixed-bg h1{
+    font-size: 48px;
+    font-weight: 300;
+  }
+}
+
+
