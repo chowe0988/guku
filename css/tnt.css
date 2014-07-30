@@ -63,7 +63,7 @@ a {
     color:#ff6d24; 
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .tnt-header {
         height: 70px;
     }
@@ -117,7 +117,7 @@ a {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .tnt-nav {
     width: auto;
     height: auto;
@@ -217,6 +217,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -243,12 +244,45 @@ a {
   background-image:  url("../assets/image/tnt/tnt2.png");
 }
 
-@media only screen and (min-width: 768px) {
+.fixed-bg:before{
+  content: '';
+  width: 53%;
+  position: absolute;
+  z-index: 3;
+  bottom: -1px;
+  left: 0;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid #FCEB01;
+}
+
+.fixed-bg:after{
+  width: 53%;
+  content: '';
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: -1px;
+  border-left: 40px solid transparent;
+  border-bottom: 40px solid #FCEB01;
+}
+
+
+@media screen and (min-width: 768px) {
   .fixed-bg h1 {
     font-size: 36px;
   }
+
+.fixed-bg:before{
+  width: 52%;
 }
-@media only screen and (min-width: 1170px) {
+
+.fixed-bg:after{
+  width: 52%;
+}
+}
+
+
+@media screen and (min-width: 1170px) {
   .fixed-bg {
     background-attachment: fixed;
   }
@@ -256,23 +290,72 @@ a {
     font-size: 48px;
     font-weight: 300;
   }
+
+  .fixed-bg:before{
+    width: 51%;
+  }
+
+.fixed-bg:after{
+    width: 51%;
+  }
 }
 
 .scrolling-bg {
   position: relative;
   height: 100%;
   line-height: 1.5;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   z-index: 2;
   font-size: 15px;
   font-size: 1rem;
   font-weight: 400;
 }
 
+.style-bg,.rule-bg{
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
 .scrolling-bg h1{
     font-size: 30px;
     font-weight:700;
   }
+
+.left-container{
+  margin-left:5%; 
+  margin-top:5%; 
+  float: left;
+  width: 40%;
+}
+
+.right-container{
+  padding:0;
+  float: right;
+  width: 50%;
+  z-index: 3;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left left;
+  background-image:  url("../assets/image/tnt/tnt3.png");  
+}
+
+.scrolling-bg.rule-bg>.article-container{
+   padding-top: 2%;
+}
+
+.map-container{
+  float: left;
+  margin-top:10%; 
+  margin-left:5%; 
+  width: 45%;
+  height: 500px;
+}
+
+.text-container{
+  float: right;
+  margin-top:10%; 
+  margin-right:15%; 
+}
 
 .scrolling-bg.about-bg {
   background-color: #FCEB01;
@@ -284,7 +367,7 @@ a {
 }
 .scrolling-bg.rule-bg {
   background-color: #b4d7a8;
-  color: #3d3536;
+  color: #524F40;
 }
 
 .scrolling-bg.contact-bg {
@@ -292,7 +375,9 @@ a {
   color: #3d3536;
 }
 
-@media only screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 1170px) {
   .scrolling-bg {
     font-size: 20px;
     font-size: 1.25rem;
@@ -309,35 +394,8 @@ a {
     font-weight:900;
   }
 
+  .map-container{
+  height: 80%;
 }
 
-.left-container{
-  margin-left:5%; 
-  margin-top:10%; 
-  float: left;
-  width: 40%;
-}
-
-.right-container{
-  padding:0;
-  float: right;
-  width: 50%;
-  z-index: 3;
-  position: relative;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left left;
-  background-image:  url("../assets/image/tnt/tnt3.png");  
-}
-
-.scrolling-bg.rule-bg>.article-container{
-   padding-top: 2%;
-}
-
-.map-container{
-  margin-top:7%; 
-  margin-left:10%; 
-  width: 60%;
-  float: left;
 }
