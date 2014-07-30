@@ -204,7 +204,7 @@ a {
 
 }
 
-.tnt-main-content {
+.main-content {
   height: 100%;
   position: relative;
   z-index: 1;
@@ -239,7 +239,7 @@ a {
   color: white;
 }
 .fixed-bg.bg-1 {
-  background-image:  url("../assets/image/tnt.png");
+  background-image:  url("../assets/image/tnt/tnt2.png");
 }
 
 @media only screen and (min-width: 768px) {
