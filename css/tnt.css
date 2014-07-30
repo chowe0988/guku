@@ -217,7 +217,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -284,6 +283,10 @@ a {
 
 @media screen and (min-width: 1170px) {
   .fixed-bg {
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    -o-background-attachment: fixed;
     background-attachment: fixed;
   }
   .fixed-bg h1{
@@ -344,17 +347,30 @@ a {
 }
 
 .map-container{
-  float: left;
+  display:block;
   margin-top:10%; 
-  margin-left:5%; 
-  width: 45%;
-  height: 500px;
+  width: 80%;
+  height: 70%;
+  margin-left:10%; 
 }
 
 .text-container{
-  float: right;
-  margin-top:10%; 
-  margin-right:15%; 
+  display:block;
+  width:50%;
+  margin-left:20%; 
+}
+
+table{
+  width: 400px;
+  height: 240px;
+}
+
+td{
+  vertical-align:middle;
+}
+
+tr>:first-child{
+  text-align: center;
 }
 
 .scrolling-bg.about-bg {
@@ -395,7 +411,16 @@ a {
   }
 
   .map-container{
-  height: 80%;
-}
+    display: inline-block;
+    width: 40%;
+    height: 70%;
+   }
+
+  .text-container{
+    display: inline-block; 
+    width:40%;
+    margin-left:50px;
+    margin-bottom:13%; 
+  }
 
 }
