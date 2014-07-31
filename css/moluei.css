@@ -25,7 +25,7 @@ a {
 }
 
 .article-container {
-    padding-top: 15%;
+    padding-top: 10%;
     width: 90%;
     max-width: 768px;
     margin: 0 auto;
@@ -37,7 +37,7 @@ a {
     clear: both;
 }
 
-.tnt-header {
+.guku-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,37 +47,37 @@ a {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
-.tnt-header:after {
+.guku-header:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.tnt-header #tnt-logo {
+.guku-header #guku-logo {
     float: left;
     margin: 11px 0 0 5%;
 }
 
-#tnt-logo p{
+#guku-logo p{
 	font-size: 28px;
     color:#ff6d24; 
 }
 
 @media screen and (min-width: 768px) {
-    .tnt-header {
+    .guku-header {
         height: 70px;
     }
 
-    .tnt-header #tnt-logo {
+    .guku-header #guku-logo {
         margin: 17px 0 0 5%;
     }
 
-    #tnt-logo p{
+    #guku-logo p{
 	font-size: 36px; 
     }
 }
 
-.tnt-nav {
+.guku-nav {
   float: right;
   margin-right: 5%;
   width: 46px;
@@ -87,7 +87,7 @@ a {
   cursor: pointer;
 }
 
-.tnt-nav ul {
+.guku-nav ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,14 +99,14 @@ a {
   transform: translateY(-100%);
 }
 
-.tnt-nav ul.is-visible {
+.guku-nav ul.is-visible {
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   -ms-transform: translateY(50px);
   -o-transform: translateY(50px);
   transform: translateY(50px);
 }
-.tnt-nav a {
+.guku-nav a {
   display: block;
   height: 50px;
   line-height: 50px;
@@ -118,13 +118,13 @@ a {
 
 
 @media screen and (min-width: 768px) {
-  .tnt-nav {
+  .guku-nav {
     width: auto;
     height: auto;
     background: none;
     cursor: auto;
   }
-  .tnt-nav ul {
+  .guku-nav ul {
     position: static;
     width: auto;
     -webkit-transform: translateY(0);
@@ -135,12 +135,12 @@ a {
     line-height: 70px;
   }
 
-  .tnt-nav li {
+  .guku-nav li {
     display: inline-block;
     margin-left: 1em;
   }
 
-  .tnt-nav a {
+  .guku-nav a {
   	position: relative;
     display: inline-block;
     height: auto;
@@ -155,8 +155,8 @@ a {
     font-size: 1rem;
   }
 
- .tnt-nav a::before,
- .tnt-nav a::after {
+ .guku-nav a::before,
+ .guku-nav a::after {
   /*top line and bottom line*/
 	position: absolute;
 	left: 0;
@@ -173,30 +173,30 @@ a {
 	transform: translateY(-10px);
 }
 
-.tnt-nav a::before {
+.guku-nav a::before {
 	top: 0;
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
 
-.tnt-nav a::after {
+.guku-nav a::after {
 	bottom: -2px;
 	-webkit-transform: translateY(10px);
 	-moz-transform: translateY(10px);
 	transform: translateY(10px);
 }
 
-.tnt-nav a:hover,
-.tnt-nav a:focus {
+.guku-nav a:hover,
+.guku-nav a:focus {
 	color: #eb7805;
    
 }
 
-.tnt-nav a:hover::before,
-.tnt-nav a:focus::before,
-.tnt-nav a:hover::after,
-.tnt-nav a:focus::after {
+.guku-nav a:hover::before,
+.guku-nav a:focus::before,
+.guku-nav a:hover::after,
+.guku-nav a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
@@ -240,10 +240,19 @@ a {
   color: white;
 }
 .fixed-bg.bg-1 {
-  background-image:  url("../assets/image/tnt/tnt2.png");
+  background-image:  url("../assets/image/moluei/header.png");
 }
 
-.fixed-bg:before{
+.fixed-bg.bg-2 {
+  background-position: top center;
+  background-image: url("../assets/image/moluei/05.jpg");
+}
+.fixed-bg.bg-3 {
+  background-position: center;
+  background-image: url("../assets/image/moluei/04.png");
+}
+
+.fixed-bg.bg-1:before{
   content: '';
   width: 53%;
   position: absolute;
@@ -251,10 +260,10 @@ a {
   bottom: -1px;
   left: 0;
   border-right: 40px solid transparent;
-  border-bottom: 40px solid #FCEB01;
+  border-bottom: 40px solid #EB6C76;
 }
 
-.fixed-bg:after{
+.fixed-bg.bg-1:after{
   width: 53%;
   content: '';
   position: absolute;
@@ -262,7 +271,7 @@ a {
   right: 0;
   bottom: -1px;
   border-left: 40px solid transparent;
-  border-bottom: 40px solid #FCEB01;
+  border-bottom: 40px solid #EB6C76;
 }
 
 
@@ -294,11 +303,11 @@ a {
     font-weight: 300;
   }
 
-  .fixed-bg:before{
+  .fixed-bg.bg-1:before{
     width: 51%;
   }
 
-.fixed-bg:after{
+.fixed-bg.bg-1:after{
     width: 51%;
   }
 }
@@ -320,10 +329,11 @@ a {
 .scrolling-bg h1{
     font-size: 30px;
     font-weight:700;
+    padding-bottom: 10px;
   }
 
 .left-container{
-  margin-left:5%; 
+  margin-left:10%; 
   margin-top:5%; 
   float: left;
   width: 40%;
@@ -338,8 +348,8 @@ a {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left left;
-  background-image:  url("../assets/image/tnt/tnt3.png");  
+  background-position: top left;
+  background-image:  url("../assets/image/moluei/09.png");
 }
 
 .scrolling-bg.rule-bg>.article-container{
@@ -374,12 +384,12 @@ tr>:first-child{
 }
 
 .scrolling-bg.about-bg {
-  background-color: #FCEB01;
-  color: #0D62A7;
+  background-color: #EB6C76;
+  color: #253f69;
 }
 .scrolling-bg.style-bg {
-  background-color: #524F40;
-  color: #FCEB01;
+  background-color: #86c725;
+  color: #FBFCF5;
 }
 .scrolling-bg.rule-bg {
   background-color: #b4d7a8;
@@ -419,7 +429,7 @@ tr>:first-child{
   .text-container{
     display: inline-block; 
     width:40%;
-    margin-left:80px;
+    margin-left:50px;
     margin-bottom:13%; 
   }
 
