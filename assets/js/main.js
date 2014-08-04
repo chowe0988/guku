@@ -39,8 +39,10 @@ $(document).ready(function(){
 
 			if($this.attr("class") != lock){
 				//$showImage.removeClass('content');
-				$showImage.stop(false, true).fadeTo(300, .7).css("background-image",_src).stop(false, true).fadeTo(900, 1);
+				$showImage.stop(false, true).fadeTo('slow', .5);
+				$showImage.css("background-image",_src).fadeTo('slow', 1)
 			    lock = $this.attr("class");
+
 			}
 		}).click(function(){
 			// 如果超連結被點擊時, 取消連結動作
