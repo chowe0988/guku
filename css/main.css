@@ -19,20 +19,36 @@ html,body,section{
 	height: 100%;
 }
 
-#container{
+header{
+	height: 35%;
 	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-image: url(../assets/image/index/tnt.png);
-	-webkit-background-size:cover; 
-	-moz-background-size:cover;
-	background-size:cover;
-	overflow: hidden;
+}
+
+.guku-logo,
+.joinus{
+	height: 35%;
+	width: 160px;
+	margin-top:2%;
+}
+
+.guku-logo{
+    margin-left: 8%;
+	float: left;
+	text-align: center;
+}
+
+.guku-logo p{
+	float: left;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+	color:#EF5226;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .joinus{
 	height: 35%;
-	width: 200px;
+	width: 160px;
 	margin-right: 8%;
 	margin-top:2%;
 	text-align: right;
@@ -41,19 +57,20 @@ html,body,section{
 }
 
 .joinus a {
+	float: left;
     text-decoration: none;
     font-size: 2.5em;
-	color:#EF5226;
+	color:#ffffff;
 	font-family: 'Kaushan Script', cursive;
 	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .joinus a::before {
-	color: #fff;
+	color: #EF5226;
 	content: attr(data-hover);
 	position: absolute;
-	opacity: 1;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	opacity: 0;
+	text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 	-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
 	-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
 	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
@@ -71,7 +88,20 @@ html,body,section{
 	opacity: 1;
 }
 
-ol, ul { list-style: none; }
+#container{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-image: url(../assets/image/index/tnt.png);
+	-webkit-background-size:cover; 
+	-moz-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+}
+
+ol, ul { 
+	list-style: none;
+	 }
 
 .box-menu{
 	clear: both;
@@ -86,39 +116,15 @@ ol, ul { list-style: none; }
     display: inline-block;
     /*border: solid 2px red;*/
 }
-/*
-li>.btn{
-	background: transparent;
-    color: #ff3b6b;
-	display: inline-block;
-	height: 120px;
-	width: 120px;
-	border: 1px solid #ff3b6b;
-	border-radius: 100%;
-	margin-left: 15px;
-	margin-top: 5px;
-	margin-right: 15px;
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Quattrocento', serif;
-	-moz-outline:none;
-	-o-outline:none;
-	-webkit-outline:none;
-	outline:none;
-    -webkit-transition: .5s;
-    transition: .5s;
-    cursor: pointer;
-	text-shadow: 0 0 1px rgba(111,134,134,0.3);
-}
-*/
+
 
 li>.btn{
 	background:rgba(255,255,255,.2);
-	color: #ff3b6b;
+	color: #EF5226;
 	display: inline-block;
 	height: 130px;
 	width: 130px;
-	border: 2px solid #ff3b6b;
+	border: 2px solid #EF5226;
 	border-radius: 100%;
 	margin-right: 15px;
 	margin-left: 15px;
@@ -137,7 +143,7 @@ li>.btn{
 li>.btn:hover,
 li>.btn:focus{
 	color: #fff;
-    background:rgba(255,59,107,0.9);
+    background:rgba(239,82,38,0.9);
 	transition: .5s;
 	opacity: 1;
 }
@@ -149,30 +155,40 @@ span{
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size:15px;
 }
-
+/*
 .btn.t-btn>span{
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-weight:700;
 	color:#1b4a63;
 }
+*/
 
 
 
-
-@media screen and (min-width: 610px) and (max-width: 767px) {
+@media screen and (min-width: 640px) and (max-width: 820px) {
     li>.btn{
 	    margin-left: 40px;
 	    margin-right: 40px;
     }
 }
 
-@media screen and (min-width: 331px) and (max-width: 457px) {
+@media screen and (min-width: 331px) and (max-width: 490px) {
    #container{
 	    height: 600px;
 	    width: 100%;
     }
 
-   .joinus{
+    .joinus,
+    .guku-logo{
+    width: 36%;
+    }
+
+    .joinus a,
+    .guku-logo p {
+    	font-size: 2em;
+    }
+
+   header{
 	    height: 20%;
    }
 
@@ -181,35 +197,48 @@ span{
     }
 
     li>.btn{
-	    height: 100px;
-	    width: 100px;
+	    height: 50px;
+	    width: 50%;
 	    margin-bottom: 10px;
 	    margin-left: 10px;
 	    margin-right: 10px;
+	    border-radius: 5%;
     }
 }
 
 
 @media screen and (max-width: 330px) {
    #container{
-	height: 600px;
-	width: 100%;
-}
+	    height: 400px;
+	    width: 100%;
+    }
 
-   .joinus{
-	height: 16%;
-}
+    header{
+	    height: 16%;
+    }
 
-.menu li {
-    display: inline;
-}
+    .joinus a,
+    .guku-logo p {
+    	font-size: 1.5em;
+    }
 
-li>.btn{
-	height: 90px;
-	width: 90px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
+
+    .joinus,
+    .guku-logo{
+    width: 32%;
+    }
+
+   .menu li {
+        display: inline;
+    }
+
+    li>.btn{
+	   height: 40px;
+	   width: 50%;
+	   margin-bottom: 10px;
+	   margin-left: 10px;
+	   margin-right: 10px;
+	   border-radius: 5%;
+    }
 
 }
