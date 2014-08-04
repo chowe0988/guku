@@ -40,7 +40,7 @@ $(document).ready(function(){
 			if($this.attr("class") != lock){
 				//$showImage.removeClass('content');
 				$showImage.stop(false, true).fadeTo('slow', .5);
-				$showImage.css("background-image",_src).fadeTo('slow', 1)
+				$showImage.stop(false,true).css("background-image",_src).fadeTo('slow', 1);
 			    lock = $this.attr("class");
 
 			}

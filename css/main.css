@@ -32,20 +32,50 @@ html,body,section{
 
 .joinus{
 	height: 35%;
-	margin-right: 10%;
+	width: 200px;
+	margin-right: 8%;
 	margin-top:2%;
 	text-align: right;
+	cursor: pointer;
+	float: right;
 }
 
-.joinus p{
-	font-size: 2.5em;
+.joinus a {
+    text-decoration: none;
+    font-size: 2.5em;
 	color:#EF5226;
 	font-family: 'Kaushan Script', cursive;
 	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+.joinus a::before {
+	color: #fff;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 1;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.joinus a:hover::before,
+.joinus a:focus::before {
+	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	opacity: 1;
+}
+
 ol, ul { list-style: none; }
 
+.box-menu{
+	clear: both;
+}
 
 .menu{
 	/*border: solid 2px green;*/
@@ -83,18 +113,23 @@ li>.btn{
 */
 
 li>.btn{
-	background: transparent;
+	background:rgba(255,255,255,.2);
 	color: #ff3b6b;
 	display: inline-block;
 	height: 130px;
 	width: 130px;
-	border: 1px solid #ff3b6b;
+	border: 2px solid #ff3b6b;
 	border-radius: 100%;
 	margin-right: 15px;
 	margin-left: 15px;
 	font-size: 22px;
 	font-family: 'Quattrocento Sans', sans-serif;
 	cursor: pointer;
+	-moz-outline:none;
+	-o-outline:none;
+	-webkit-outline:none;
+	outline:none;
+	text-shadow: 0 0 2px rgba(111,134,134,0.3);
 }
 
 
@@ -102,11 +137,10 @@ li>.btn{
 li>.btn:hover,
 li>.btn:focus{
 	color: #fff;
-    background:#ff3b6b;
+    background:rgba(255,59,107,0.9);
 	transition: .5s;
 	opacity: 1;
 }
-
 span{
 	font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 }
@@ -123,31 +157,7 @@ span{
 }
 
 
-/*
-.btn.e-btn{
 
-}
-*/
-
-/*
-.btn.i-btn{
- background: linear-gradient(to left, rgba(218,13,20,0.2),rgba(218,13,20,.8),rgba(218,13,20,1),rgba(218,13,20,1));
-}
-
-
-.btn.t-btn{
-  background: linear-gradient(to left, rgba(255,255,41,0.2),rgba(255,255,41,.8),rgba(255,255,41,1),rgba(255,255,41,1));
-}
-
-
-.btn.h-btn{
-  background: linear-gradient(to left, rgba(78,47,27,0.2),rgba(78,47,27,.8),rgba(78,47,27,1),rgba(78,47,27,1));
-}
-
-
-.btn.m-btn{
- background: linear-gradient(to left, rgba(19,18,15,0.2),rgba(19,18,15,.8),rgba(19,18,15,1),rgba(19,18,15,1));
-}*/
 
 @media screen and (min-width: 610px) and (max-width: 767px) {
     li>.btn{
