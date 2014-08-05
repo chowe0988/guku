@@ -5,11 +5,11 @@
 
 .fixed-bg.bg-2 {
   background-position: center;
-  background-image: url("../assets/image/harriod/05.png");
+  background-image: url("../assets/image/harriod/02.png");
 }
 .fixed-bg.bg-3 {
   background-position: center;
-  background-image: url("../assets/image/harriod/04.png");
+  background-image: url("../assets/image/harriod/03.png");
 }
 
 .fixed-bg.bg-1:before{
@@ -21,7 +21,7 @@
 }
 
 .left-container{ 
-  background-image:  url("../assets/image/harriod/09.png");
+  background-image:  url("../assets/image/harriod/about.png");
 }
 
 .scrolling-bg.about-bg {
@@ -30,12 +30,12 @@
   color: #EBDFBD;
 }
 .scrolling-bg.style-bg {
-  background-color: #DCB892;
-  color: #6B5B4E;
+  background-color: #63a097;
+  color: #573311;
 }
 .scrolling-bg.rule-bg {
-  background-color: #E2B29E;
-  color: #513D32;
+  background-color: #d6733e;
+  color: #faede4;
 }
 
 .scrolling-bg.contact-bg {
@@ -71,7 +71,7 @@
   margin-left:50%; 
   background-size: cover;
   background-repeat: center right;
-  background-image:  url("../assets/image/harriod/09.png");
+  background-image:  url("../assets/image/harriod/about.png");
 }
 }
 

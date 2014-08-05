@@ -1,389 +1,41 @@
-html * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-}
-
-body {
-    font-size: 100%;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-    color: #3d3536;
-}
-
-a {
-    text-decoration: none;
-}
-
-.article-container {
-    padding-top: 15%;
-    width: 90%;
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-.article-container::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.tnt-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-}
-.tnt-header:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.tnt-header #tnt-logo {
-    float: left;
-    margin: 11px 0 0 5%;
-}
-
-#tnt-logo p{
-	font-size: 28px;
-    color:#ff6d24; 
-}
-
-@media screen and (min-width: 768px) {
-    .tnt-header {
-        height: 70px;
-    }
-
-    .tnt-header #tnt-logo {
-        margin: 17px 0 0 5%;
-    }
-
-    #tnt-logo p{
-	font-size: 36px; 
-    }
-}
-
-.tnt-nav {
-  float: right;
-  margin-right: 5%;
-  width: 46px;
-  height: 100%;
-  background: url("../assets/image/icon-menu.svg") no-repeat center center;
-  background-size: 46px 46px;
-  cursor: pointer;
-}
-
-.tnt-nav ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-
-.tnt-nav ul.is-visible {
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  -o-transform: translateY(50px);
-  transform: translateY(50px);
-}
-.tnt-nav a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 5%;
-  background: #2f292a;
-  border-top: 1px solid #453c3d;
-  color: #9e8564;
-}
-
-
-@media screen and (min-width: 768px) {
-  .tnt-nav {
-    width: auto;
-    height: auto;
-    background: none;
-    cursor: auto;
-  }
-  .tnt-nav ul {
-    position: static;
-    width: auto;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    line-height: 70px;
-  }
-
-  .tnt-nav li {
-    display: inline-block;
-    margin-left: 1em;
-  }
-
-  .tnt-nav a {
-  	position: relative;
-    display: inline-block;
-    height: auto;
-    line-height: normal;
-    background: transparent;
-    padding: .6em 1em;
-    border-top: none;
-    color: #47403a;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    font-size: 1rem;
-  }
-
- .tnt-nav a::before,
- .tnt-nav a::after {
-  /*top line and bottom line*/
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #47403a;
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-
-.tnt-nav a::before {
-	top: 0;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-
-.tnt-nav a::after {
-	bottom: -2px;
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	transform: translateY(10px);
-}
-
-.tnt-nav a:hover,
-.tnt-nav a:focus {
-	color: #eb7805;
-   
-}
-
-.tnt-nav a:hover::before,
-.tnt-nav a:focus::before,
-.tnt-nav a:hover::after,
-.tnt-nav a:focus::after {
-	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	transform: translateY(0px);
-}
-
-}
-
-.main-content {
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.fixed-bg {
-  position: relative;
-  min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
-}
-
-.fixed-bg h1{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1170px;
-  text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  color: white;
-}
 .fixed-bg.bg-1 {
-  background-image:  url("../assets/image/tnt/tnt2.png");
+  background-image:  url("../assets/image/tnt/header.png");
 }
 
-.fixed-bg:before{
-  content: '';
-  width: 53%;
-  position: absolute;
-  z-index: 3;
-  bottom: -1px;
-  left: 0;
-  border-right: 40px solid transparent;
-  border-bottom: 40px solid #FCEB01;
+.fixed-bg.bg-2 {
+  background-position: center;
+  background-image: url("../assets/image/tnt/02.png");
+}
+.fixed-bg.bg-3 {
+  background-position: center;
+  background-image: url("../assets/image/tnt/03.png");
 }
 
-.fixed-bg:after{
-  width: 53%;
-  content: '';
-  position: absolute;
-  z-index: 3;
-  right: 0;
-  bottom: -1px;
-  border-left: 40px solid transparent;
-  border-bottom: 40px solid #FCEB01;
+.fixed-bg.bg-1:before{
+  border-bottom: 40px solid #6d929c;
 }
 
-
-@media screen and (min-width: 768px) {
-  .fixed-bg h1 {
-    font-size: 36px;
-  }
-
-.fixed-bg:before{
-  width: 52%;
+.fixed-bg.bg-1:after{
+  border-bottom: 40px solid #6d929c;
 }
 
-.fixed-bg:after{
-  width: 52%;
-}
-}
-
-
-@media screen and (min-width: 1170px) {
-  .fixed-bg {
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -ms-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-  }
-  .fixed-bg h1{
-    font-size: 48px;
-    font-weight: 300;
-  }
-
-  .fixed-bg:before{
-    width: 51%;
-  }
-
-.fixed-bg:after{
-    width: 51%;
-  }
-}
-
-.scrolling-bg {
-  position: relative;
-  height: 100%;
-  line-height: 1.5;
-  z-index: 2;
-  font-size: 15px;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.style-bg,.rule-bg{
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-}
-
-.scrolling-bg h1{
-    font-size: 30px;
-    font-weight:700;
-  }
-
-.left-container{
-  margin-left:5%; 
-  margin-top:5%; 
-  float: left;
-  width: 40%;
-}
-
-.right-container{
-  padding:0;
-  float: right;
-  width: 50%;
-  z-index: 3;
-  height: 100%;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left left;
-  background-image:  url("../assets/image/tnt/tnt3.png");  
-}
-
-.scrolling-bg.rule-bg>.article-container{
-   padding-top: 2%;
-}
-
-.map-container{
-  display:block;
-  margin-top:10%; 
-  width: 80%;
-  height: 70%;
-  margin-left:10%; 
-}
-
-.text-container{
-  display:block;
-  width:50%;
-  margin-left:20%; 
-}
-
-table{
-  width: 400px;
-  height: 240px;
-}
-
-td{
-  vertical-align:middle;
-}
-
-tr>:first-child{
-  text-align: center;
+.left-container{ 
+  background-image:  url("../assets/image/tnt/about.png");
 }
 
 .scrolling-bg.about-bg {
-  background-color: #FCEB01;
-  color: #0D62A7;
+  position: relative;
+  background-color: #6d929c;
+  color: #FFFFFF;
 }
 .scrolling-bg.style-bg {
-  background-color: #524F40;
-  color: #FCEB01;
+  background-color: #AAAAAA;
+  color: #231E2E;
 }
 .scrolling-bg.rule-bg {
-  background-color: #b4d7a8;
-  color: #524F40;
+  background-color: #5FACE0;
+  color: #474747;
 }
 
 .scrolling-bg.contact-bg {
@@ -391,36 +43,36 @@ tr>:first-child{
   color: #3d3536;
 }
 
-
-
-@media screen and (min-width: 1170px) {
-  .scrolling-bg {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 2;
-    font-weight: 600;
-  }
-  .scrolling-bg h1{
-    font-size: 48px;
-    font-weight:900;
-  }
-
-  .left-container h1{
-    font-size: 48px;
-    font-weight:900;
-  }
-
-  .map-container{
-    display: inline-block;
-    width: 40%;
-    height: 70%;
-   }
-
-  .text-container{
-    display: inline-block; 
-    width:40%;
-    margin-left:80px;
-    margin-bottom:13%; 
-  }
-
+@media screen and (min-width: 770px){
+  .left-container{
+  margin-top:5%;
+  margin-left:10%;  
+  float: left;
+  width: 70%;
+  background: url();
+  z-index: 3;
+  line-height: 175%;
 }
+
+.left-container h1{
+    margin-left:-10%;
+    font-size: 36px;
+    font-weight:900;
+    margin-bottom:1%; 
+  }
+
+
+.right-container{
+  position: absolute;
+  display:table;
+  width: 50%;
+  z-index: 2;
+  height: 100%;
+  margin-left:50%; 
+  background-size: cover;
+  background-repeat: center right;
+  background-image:  url("../assets/image/tnt/about.png");
+}
+}
+
+
