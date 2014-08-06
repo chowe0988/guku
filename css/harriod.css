@@ -30,17 +30,12 @@
   color: #EBDFBD;
 }
 .scrolling-bg.style-bg {
-  background-color: #63a097;
-  color: #573311;
+  background-color: #c97a49;
+  color: #e8d3c5;
 }
 .scrolling-bg.rule-bg {
-<<<<<<< HEAD
-  background-color: #d6733e;
-  color: #faede4;
-=======
   background-color: #fff;
   color: #9C5C35;
->>>>>>> origin/master
 }
 
 .scrolling-bg.contact-bg {

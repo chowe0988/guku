@@ -19,6 +19,17 @@ html,body,section{
 	height: 100%;
 }
 
+#container{
+	width: 100%;
+	height: 100%;
+	background-position: top center;
+	background-image: url(../assets/image/index/tnt.png);
+	-webkit-background-size:cover; 
+	-moz-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+}
+
 header{
 	height: 35%;
 	width: 100%;
@@ -92,17 +103,6 @@ header{
 	opacity: 1;
 }
 
-#container{
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-image: url(../assets/image/index/tnt.png);
-	-webkit-background-size:cover; 
-	-moz-background-size:cover;
-	background-size:cover;
-	overflow: hidden;
-}
-
 ol, ul { 
 	list-style: none;
 	 }
@@ -154,7 +154,7 @@ li>.btn:focus{
 	opacity: 1;
 }
 span{
-	font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
+	font-family:"新宋体","微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 	font-weight: 700;
 }
 
