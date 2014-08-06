@@ -34,8 +34,13 @@
   color: #573311;
 }
 .scrolling-bg.rule-bg {
+<<<<<<< HEAD
   background-color: #d6733e;
   color: #faede4;
+=======
+  background-color: #fff;
+  color: #9C5C35;
+>>>>>>> origin/master
 }
 
 .scrolling-bg.contact-bg {

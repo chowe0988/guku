@@ -123,16 +123,17 @@ ol, ul {
 
 
 li>.btn{
-	background:rgba(255,255,255,.2);
-	color: #EF5226;
+	background:rgba(255,255,255,.3);
+	color: #ff2600;
 	display: inline-block;
 	height: 130px;
 	width: 130px;
-	border: 2px solid #EF5226;
+	border: 2px solid #ff2600;
 	border-radius: 100%;
 	margin-right: 15px;
 	margin-left: 15px;
 	font-size: 22px;
+	font-weight: 600;
 	font-family: 'Quattrocento Sans', sans-serif;
 	cursor: pointer;
 	-moz-outline:none;
@@ -147,26 +148,20 @@ li>.btn{
 li>.btn:hover,
 li>.btn:focus{
 	color: #fff;
+	border: 2px solid rgba(239,82,38,0.9);
     background:rgba(239,82,38,0.9);
 	transition: .5s;
 	opacity: 1;
 }
 span{
 	font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
+	font-weight: 700;
 }
 
 .btn.e-btn>span{
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size:15px;
 }
-/*
-.btn.t-btn>span{
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-weight:700;
-	color:#1b4a63;
-}
-*/
-
 
 
 @media screen and (min-width: 640px) and (max-width: 820px) {

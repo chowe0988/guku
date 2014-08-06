@@ -32,13 +32,15 @@
   color: #6B5B4E;
 }
 .scrolling-bg.rule-bg {
-  background-color: #E2B29E;
+  background-color: #fff;
   color: #513D32;
+  z-index: -1;
 }
 
 .scrolling-bg.contact-bg {
   background-color: #ffffff;
   color: #3d3536;
+  z-index: 3;
 }
 
 @media screen and (min-width: 770px){

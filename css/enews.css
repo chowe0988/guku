@@ -34,7 +34,11 @@
   color: #fff;
 }
 .scrolling-bg.rule-bg {
+<<<<<<< HEAD
   background-color: #F1AA6B;
+=======
+  background-color: #fff;
+>>>>>>> origin/master
   color: #B51C2A;
 }
 
