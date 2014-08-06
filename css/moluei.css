@@ -4,11 +4,11 @@
 
 .fixed-bg.bg-2 {
   background-position: top center;
-  background-image: url("../assets/image/moluei/05.jpg");
+  background-image: url("../assets/image/moluei/02.jpg");
 }
 .fixed-bg.bg-3 {
   background-position: center;
-  background-image: url("../assets/image/moluei/04.png");
+  background-image: url("../assets/image/moluei/03.png");
 }
 
 .fixed-bg.bg-1:before{
@@ -20,7 +20,7 @@
 }
 
 .left-container{ 
-  background-image:  url("../assets/image/moluei/09.png");
+  background-image:  url("../assets/image/moluei/about.png");
 }
 
 .scrolling-bg.about-bg {
@@ -43,19 +43,20 @@
 
 @media screen and (min-width: 770px){
   .left-container{
-  margin-left:5%; 
-  margin-top:5%; 
+  margin-top:5%;
+  margin-left:10%;  
   float: left;
-  width: 40%;
+  width: 70%;
   background: url();
+  z-index: 3;
+  line-height: 175%;
 }
 
 .left-container h1{
-    margin-top:-5%;
-    margin-left: -10%;
-    margin-bottom:5%; 
+    margin-left:-10%;
     font-size: 36px;
     font-weight:900;
+    margin-bottom:1%; 
   }
 
 
@@ -67,6 +68,18 @@
   z-index: 3;
   height: 100%;
   position: relative;
+  background-size: cover;
+  background-repeat: center right;
+  background-image:  url("../assets/image/moluei/09.png");
+}
+
+.right-container{
+  position: absolute;
+  display:table;
+  width: 50%;
+  z-index: 2;
+  height: 100%;
+  margin-left:50%; 
   background-size: cover;
   background-repeat: center right;
   background-image:  url("../assets/image/moluei/09.png");
