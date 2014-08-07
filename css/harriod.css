@@ -29,6 +29,17 @@
   background-image:  url("../assets/image/harriod/about.png");
 }
 
+.scrolling-bg {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+}
+
+.scrolling-bg h1{
+  color: #A5522E;
+}
+
+/*
 .scrolling-bg.about-bg {
   position: relative;
   background-color: #fff;
@@ -47,7 +58,7 @@
   background-color: #ffffff;
   color: #3d3536;
 }
-
+*/
 @media screen and (min-width: 770px){
   .left-container{
   margin-top:5%;

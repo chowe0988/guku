@@ -264,7 +264,8 @@ a {
   left: 50%;
   top: 50%;
   bottom: auto;
-  text-align: left;
+  right: auto;
+  text-align: center;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -276,7 +277,7 @@ a {
   font-size: 1.875rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   color: white;
-  line-height: 140%;
+  line-height: 200%;
   font-family:"新宋体","微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 }
 

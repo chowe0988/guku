@@ -25,9 +25,20 @@
 }
 
 .left-container{ 
-  background-image:  url("../assets/image/moluei/about.png");
+  background-image:  url("../assets/image/moluei/about-2.png");
 }
 
+.scrolling-bg {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+}
+
+.scrolling-bg h1{
+  color: #E4685C;
+}
+
+/*
 .scrolling-bg.about-bg {
   position: relative;
   background-color: #fff;
@@ -46,15 +57,7 @@
   background-color: #ffffff;
   color: #3d3536;
 }
-
-
-.left-container h1{
-  color: #E4685C;
-}
-
-.article-container h1{
-  color: #E4685C;
-}
+*/
 
 @media screen and (min-width: 770px){
   .left-container{

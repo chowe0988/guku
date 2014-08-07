@@ -12,6 +12,12 @@
   background-image: url("../assets/image/tnt/03.png");
 }
 
+.fixed-bg.bg-4 {
+  background-position: top center;
+  background-image: url("../assets/image/tnt/04.png");
+}
+
+
 .fixed-bg.bg-1:before{
   border-bottom: 40px solid #fff;
 }
@@ -24,6 +30,17 @@
   background-image:  url("../assets/image/tnt/about.png");
 }
 
+.scrolling-bg {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+}
+
+.scrolling-bg h1{
+  color: #6D929C;
+}
+
+/*
 .scrolling-bg.about-bg {
   position: relative;
   background-color: #fff;
@@ -42,6 +59,7 @@
   background-color: #ffffff;
   color: #3d3536;
 }
+*/
 
 @media screen and (min-width: 770px){
   .left-container{
