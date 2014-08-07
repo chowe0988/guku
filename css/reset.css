@@ -256,6 +256,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 1;
+
 }
 
 .fixed-bg h1{
@@ -263,7 +264,7 @@ a {
   left: 50%;
   top: 50%;
   bottom: auto;
-  right: auto;
+  text-align: left;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -271,11 +272,12 @@ a {
   transform: translateX(-50%) translateY(-50%);
   width: 90%;
   max-width: 1170px;
-  text-align: center;
   font-size: 30px;
   font-size: 1.875rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   color: white;
+  line-height: 140%;
+  font-family:"新宋体","微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 }
 
 .fixed-bg.bg-1:before{
@@ -321,6 +323,7 @@ a {
   .fixed-bg h1{
     font-size: 48px;
     font-weight: 300;
+    position: fixed;
   }
 
   .fixed-bg.bg-1:before{

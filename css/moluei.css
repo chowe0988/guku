@@ -4,19 +4,24 @@
 
 .fixed-bg.bg-2 {
   background-position: top center;
-  background-image: url("../assets/image/moluei/02.jpg");
+  background-image: url("../assets/image/moluei/02.png");
 }
 .fixed-bg.bg-3 {
   background-position: center;
   background-image: url("../assets/image/moluei/03.png");
 }
 
+.fixed-bg.bg-4 {
+  background-position: center;
+  background-image: url("../assets/image/moluei/04.png");
+}
+
 .fixed-bg.bg-1:before{
-  border-bottom: 40px solid #FA9C69;
+  border-bottom: 40px solid #fff;
 }
 
 .fixed-bg.bg-1:after{
-  border-bottom: 40px solid #FA9C69;
+  border-bottom: 40px solid #fff;
 }
 
 .left-container{ 
@@ -24,23 +29,31 @@
 }
 
 .scrolling-bg.about-bg {
-  background-color: #FA9C69;
-  color: #FFFFFF;
+  position: relative;
+  background-color: #fff;
+  color: #000;
 }
 .scrolling-bg.style-bg {
-  background-color: #DCB892;
-  color: #6B5B4E;
+  background-color: #fff;
+  color: #000;
 }
 .scrolling-bg.rule-bg {
   background-color: #fff;
-  color: #513D32;
-  z-index: -1;
+  color: #000;
 }
 
 .scrolling-bg.contact-bg {
   background-color: #ffffff;
   color: #3d3536;
-  z-index: 3;
+}
+
+
+.left-container h1{
+  color: #E4685C;
+}
+
+.article-container h1{
+  color: #E4685C;
 }
 
 @media screen and (min-width: 770px){
@@ -63,19 +76,6 @@
 
 
 .right-container{
-  display:table;
-  padding:0;
-  float: right;
-  width: 50%;
-  z-index: 3;
-  height: 100%;
-  position: relative;
-  background-size: cover;
-  background-repeat: center right;
-  background-image:  url("../assets/image/moluei/09.png");
-}
-
-.right-container{
   position: absolute;
   display:table;
   width: 50%;
@@ -84,7 +84,6 @@
   margin-left:50%; 
   background-size: cover;
   background-repeat: center right;
-  background-image:  url("../assets/image/moluei/09.png");
-}
+  background-image:  url("../assets/image/moluei/about.png");
 }
 

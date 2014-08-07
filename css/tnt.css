@@ -13,11 +13,11 @@
 }
 
 .fixed-bg.bg-1:before{
-  border-bottom: 40px solid #6d929c;
+  border-bottom: 40px solid #fff;
 }
 
 .fixed-bg.bg-1:after{
-  border-bottom: 40px solid #6d929c;
+  border-bottom: 40px solid #fff;
 }
 
 .left-container{ 
@@ -26,16 +26,16 @@
 
 .scrolling-bg.about-bg {
   position: relative;
-  background-color: #6d929c;
-  color: #FFFFFF;
+  background-color: #fff;
+  color: #000;
 }
 .scrolling-bg.style-bg {
-  background-color: #AAAAAA;
-  color: #231E2E;
+  background-color: #fff;
+  color: #000;
 }
 .scrolling-bg.rule-bg {
   background-color: #fff;
-  color: #474747;
+  color: #000;
 }
 
 .scrolling-bg.contact-bg {
