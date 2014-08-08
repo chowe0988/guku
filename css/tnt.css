@@ -27,7 +27,8 @@
 }
 
 .left-container{ 
-  background-image:  url("../assets/image/tnt/about.png");
+  background-position: bottom;
+  background-image:  url("../assets/image/tnt/about-2.png");
 }
 
 .scrolling-bg {
@@ -88,7 +89,7 @@
   height: 100%;
   margin-left:50%; 
   background-size: cover;
-  background-repeat: center right;
+  background-repeat: top;
   background-image:  url("../assets/image/tnt/about.png");
 }
 }
