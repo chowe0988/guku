@@ -13,7 +13,7 @@
 }
 
 .fixed-bg.bg-4 {
-  background-position: center;
+  background-position: top center;
   background-image: url("../assets/image/enews/04.png");
 }
 
@@ -26,7 +26,8 @@
 }
 
 .left-container{ 
-  background-image:  url("../assets/image/enews/about.png");
+  background-position: center;
+  background-image:  url("../assets/image/enews/about-2.png");
 }
 
 .scrolling-bg {

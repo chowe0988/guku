@@ -4,11 +4,11 @@
 }
 
 .fixed-bg.bg-2 {
-  background-position: center;
+  background-position:center;
   background-image: url("../assets/image/harriod/02.png");
 }
 .fixed-bg.bg-3 {
-  background-position: center;
+  background-position:top center;
   background-image: url("../assets/image/harriod/03.png");
 }
 

@@ -305,8 +305,8 @@ a {
   .fixed-bg {
     height: 420px;
   }
-
 }
+
 
 @media screen and (min-width:768px) {
 
@@ -415,6 +415,12 @@ tr>:first-child{
     height: 420px;
   }
 
+}
+
+@media screen and (min-height: 420px) and (max-width: 768px){
+  .scrolling-bg {
+    height: 420px;
+  }
 }
 
 @media screen and (min-width: 1170px) {
