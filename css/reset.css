@@ -301,6 +301,13 @@ a {
   border-left: 40px solid transparent;
 }
 
+@media screen and (max-height: 420px){
+  .fixed-bg {
+    height: 420px;
+  }
+
+}
+
 @media screen and (min-width:768px) {
 
   .fixed-bg:before{
@@ -346,7 +353,7 @@ a {
   font-weight: 400;
 }
 
-.style-bg{
+.style-bg,.rule-bg{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
@@ -401,6 +408,13 @@ td{
 
 tr>:first-child{
   text-align: center;
+}
+
+@media screen and (max-height: 420px){
+  .scrolling-bg {
+    height: 420px;
+  }
+
 }
 
 @media screen and (min-width: 1170px) {
