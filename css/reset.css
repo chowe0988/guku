@@ -61,6 +61,10 @@ a {
     text-decoration: none;
 }
 
+p{
+   font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
+}
+
 .article-container {
     padding-top: 10%;
     width: 90%;
@@ -350,7 +354,6 @@ a {
   z-index: 2;
   font-size: 15px;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 .style-bg,.rule-bg{
@@ -361,10 +364,10 @@ a {
     font-size: 30px;
     font-weight:700;
     padding-bottom: 5%;
-    padding-top: 5%;
 }
 
 .left-container{ 
+  padding-top: 5%;
   padding-left:5%;  
   width: 100%;
   height: 100%;
@@ -397,30 +400,66 @@ a {
   padding-left:15%; 
 }
 
-table{
+.text-container table{
   width: 300px;
   height: 240px;
 }
 
-td{
+.text-container td{
   vertical-align:middle;
 }
 
-tr>:first-child{
+.text-container tr>:first-child{
   text-align: center;
 }
 
+.styleimg{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.styleimg div{
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.styleimg img{
+  width:75px;
+  height:85px;
+}
+
+.styleimg p{
+   font-family:"新宋体","微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
+   font-weight: 700;
+   margin-top: 3%;
+}
+
+
 @media screen and (max-height: 420px){
   .scrolling-bg {
-    height: 420px;
+    height: 550px;
   }
-
 }
 
 @media screen and (min-height: 420px) and (max-width: 768px){
   .scrolling-bg {
-    height: 420px;
+    height: 600px;
   }
+
+  .scrolling-bg .style-bg{
+    height: 550px;
+  }
+
+}
+
+@media screen and (min-width:770px){
+  .styleimg img{
+  width:105px;
+  height:119px;
+}
 }
 
 @media screen and (min-width: 1170px) {
@@ -465,5 +504,10 @@ tr>:first-child{
     font-size: 48px;
     margin-left:-10%; 
    }
+
+   .styleimg img{
+    width:150px;
+    height:170px;
+  }
 
 }
