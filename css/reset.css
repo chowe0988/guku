@@ -105,7 +105,8 @@ h2{
 
 .guku-header #guku-logo {
     float: left;
-    margin: 11px 0 0 5%;
+    margin-top: 11px;
+    margin-bottom: 5%;
 }
 
 #guku-logo p{
@@ -123,7 +124,7 @@ h2{
     }
 
     #guku-logo p{
-	font-size: 36px; 
+	  font-size: 36px; 
     }
 }
 
@@ -373,7 +374,6 @@ h2{
 .scrolling-bg h1{
     font-size: 30px;
     font-weight:700;
-    padding-bottom: 5%;
 }
 
 .left-container{ 
@@ -406,14 +406,21 @@ h2{
 }
 
 .text-container{
-  font-size: 15px;
+  font-size: 1em;
   display:block;
-  padding-left:15%; 
+  padding-left:5%; 
+  font-family:"Roboto","新宋体","微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 }
 
+.text-container img{
+  width:50px;
+  height:50px;
+}
+
+
 .text-container table{
-  width: 300px;
-  height: 240px;
+  width: 250px;
+  height: 250px;
 }
 
 .text-container td{
@@ -451,11 +458,9 @@ h2{
    margin-top: 3%;
 }
 
-
-
 @media screen and (max-height: 600px){
   .scrolling-bg {
-    height: 600px;
+    height: 650px;
   }
 }
 
@@ -470,6 +475,35 @@ h2{
   text-align: center;
   margin-top: 2%;
   display: inline;
+}
+
+.scrolling-bg {
+    min-height: 750px;
+  }
+
+  .text-container{
+  font-size: 1em;
+  display:block;
+  padding-left:12%; 
+}
+
+.text-container td{
+  vertical-align:middle;
+  padding-left:20px; 
+}
+
+.text-container img{
+  width:75px;
+  height:75px;
+}
+
+.text-container{
+  padding-left:12%; 
+}
+
+.text-container table{
+  width: 350px;
+  height: 280px;
 }
 
 }
