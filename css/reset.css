@@ -61,11 +61,6 @@ a {
     text-decoration: none;
 }
 
-p{
-   line-height: 200%;
-   font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
-}
-
 h1,h2{
   font-family:"新宋体","微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 }
@@ -374,6 +369,11 @@ h2{
 .scrolling-bg h1{
     font-size: 30px;
     font-weight:700;
+}
+
+.scrolling-bg p{
+  line-height: 200%;
+  font-family:"微軟正黑體" ,"新細明體", "細明體" ,Georgia ;
 }
 
 .left-container{ 
