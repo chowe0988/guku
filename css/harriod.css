@@ -86,7 +86,7 @@
   height: 100%;
   margin-left:50%; 
   background-size: cover;
-  background-repeat: center right;
+  background-repeat: center center;
   background-image:  url("../assets/image/harriod/about.png");
 }
 }

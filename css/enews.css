@@ -4,11 +4,11 @@
 }
 
 .fixed-bg.bg-2 {
-  background-position: center;
+  background-position: center center;
   background-image: url("../assets/image/enews/02.png");
 }
 .fixed-bg.bg-3 {
-  background-position: center;
+  background-position: center center;
   background-image: url("../assets/image/enews/03.png");
 }
 
@@ -88,7 +88,7 @@
   height: 100%;
   margin-left:50%; 
   background-size: cover;
-  background-repeat: center right;
+  background-repeat: center center ;
   background-image:  url("../assets/image/enews/about.png");
 }
 }

@@ -262,6 +262,9 @@ h2{
   position: relative;
   min-height: 100%;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 1;
@@ -336,7 +339,7 @@ h2{
     -ms-background-attachment: fixed !important;
     -o-background-attachment: fixed !important;
     background-attachment: fixed !important;
-  }
+      }
   .fixed-bg h1{
     font-size: 48px;
     font-weight: 300;

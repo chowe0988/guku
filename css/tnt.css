@@ -89,7 +89,7 @@
   height: 100%;
   margin-left:50%; 
   background-size: cover;
-  background-repeat: top;
+  background-repeat: top center;
   background-image:  url("../assets/image/tnt/about.png");
 }
 }
